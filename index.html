@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Order summary card</title>
+
+
+  <style>
+    *{
+      margin-right: auto;
+      margin-left: auto;
+      font-family: "Roboto", sans-serif;
+      color: #838e9d;
+      
+    }
+
+    body{
+      background-image: url(images/pattern-background-desktop.svg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: top;
+      background-size: contain;
+      background-color: #f1f4ff;
+
+    }
+
+    .container{
+      background-color: #ffffff;
+      text-align: center;
+      align-items: center;
+      width: 400px;
+      border-radius: 10px;
+    }
+
+    .hero {
+      width: 400px;
+      display: block;
+      margin: 0 auto;
+      border-radius: 10px 10px 0 0;  
+    }
+
+    h3{
+      color: #1e2b56;
+    }
+
+    .desc {
+      width: 350px;
+
+    }
+
+    .plan {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: none;
+      border-radius: 10px;
+      background-color: #f1f4ff;
+      width: 335px;
+      padding: 15px;
+    }
+
+    h4{
+      color: #1e2b56;
+    }
+
+    .pay {
+      width: 330px;
+      height: 40px;
+      margin: 30px auto;
+      display: block;
+      justify-content: center;
+      color: #fff;
+      background-color: #382ae1;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;    
+      box-shadow: 0px 15px 20px rgba(56, 42, 225, 0.2); 
+    }
+    .pay:hover,
+    .pay:active{
+      cursor: pointer;
+      opacity: 70%;
+    }
+
+
+    .cancel {
+      border: none;
+      background-color: #fff;
+      margin: auto;
+      margin-bottom: 30px;
+      color: #525963;
+    }
+
+    .cancel:hover,
+    .cancel:active{
+      color: #000;
+      cursor: pointer;
+    }
+    
+
+    .change{
+      margin: auto;
+      color: #382ae1;
+      font-weight: bolder;
+      /* margin-right: 40px; */
+    }
+    .change:active{
+      cursor: pointer;
+    }
+
+    .price{
+      line-height: 5px;
+      justify-content:first baseline; 
+      margin-right: 80px;
+    }
+
+    .music{
+      width: 40px;
+    }
+
+    .attribution { 
+      font-size: 11px; 
+      text-align: center; 
+      margin-top: 40px;
+      color: #6b7180;
+
+    }
+    .attribution a {
+      color: #382ae1;
+      text-decoration: none;
+      font-weight: 500;   
+    }
+  </style>
+</head>
+
+<body>
+  <section class="container">
+    <img class="hero" src="images/illustration-hero.svg" alt="dancing girl hehe!">
+    <div class="descrip">
+      <h3>Order Summary</h3>
+      <p class="desc">You can now listen to millions of songs, audiobooks, and podcasts on any 
+      device anywhere you like!</p>
+      <div class="plan">
+        <img class="music" src="images/icon-music.svg" alt="music'icon">
+        <div class="price">
+          <h4>Annual Plan</h4>
+          <p>$59.99/year</p>
+        </div>
+        <a class="change" href="#">Change</a>
+      </div>
+      <button class="pay">Proceed to Payment</button>
+      <button class="cancel">Cancel Order</button>
+        
+    </div>
+  </section>
+
+  
+  
+<br><br><br><br>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/chaimaa-madadi" target="_blank">MADADI Chaimaa</a>.
+  </div>
+</body>
+</html>
